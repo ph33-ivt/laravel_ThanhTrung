@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//list cats
+Route::get('/cats', 'CatController@index');
+Route::get('/breeds', 'BreedController@index');
